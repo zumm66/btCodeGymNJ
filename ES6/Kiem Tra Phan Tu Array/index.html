@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiem Tra Phan Tu Array</title>
+</head>
+<body>
+    <h2>Javascript Array some</h2>
+    <p>Array numbers:</p>
+    <p id="array"></p>
+    <p>Is have number greater than 100?:</p>
+    <p id="result"></p>
+    <script>
+        const arrayNums = [13,122,12,4,15,5,32];
+        document.getElementById("array").innerHTML = arrayNums;
+        document.getElementById("result").innerHTML = arrayNums.some((num) => num > 100);
+    </script>
+</body>
+</html>

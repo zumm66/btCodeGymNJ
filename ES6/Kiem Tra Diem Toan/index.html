@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiem Tra Diem Toan</title>
+</head>
+<body>
+    <h2>Javascript Array sort and findIndex</h2>
+    <p>Student:</p>
+    <p id="students"></p>
+    <p>Result:</p>
+    <p id="result"></p>
+    <script>
+        const students = [
+            {
+                name: "A",
+                score: 8
+            },
+            {
+                name: "B",
+                score: 3
+            },
+            {
+                name: "C",
+                score: 9
+            }
+        ];
+        document.getElementById('students').innerHTML = JSON.stringify(students);
+        students.sort((firstStudent, secondStudent) => {
+            return secondStudent.score - firstStudent.score;
+        });
+        document.getElementById('result').innerHTML = students.findIndex((student) => student.name === "A") + 1;
+    </script>
+</body>
+</html>
